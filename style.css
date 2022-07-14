@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+section {
+    background-color: #fff;
+    margin: 0 11%;
+    padding: 6% 2%;
+}
+
+ul li {
+    list-style: none;
+    font-family: 'Big Shoulders Display', cursive;
+    text-decoration: underline;
+    font-size: 40px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    color: blue;
+}
+
+li:hover {
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    text-decoration: none !important;
+}
+
+.parent-div {
+    display: flex;
+    justify-content: center;
+}
+
+.context {
+    width: 207px;
+    height: 370px;
+    padding: 3%;
+    background-color: hsl(31, 77%, 52%);
+    color: #fff;
+}
+
+.context2 {
+    margin-top: 20%;
+}
+
+.context2 h2 {
+    color: hsl(0, 0%, 95%);
+    font-size: 27px;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+}
+
+.context2 p {
+    letter-spacing: 1px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
+.button {
+    margin-top: 37%;
+}
+
+button {
+    padding: 12px 28px;
+    border: none;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(31, 77%, 52%);
+}
+
+.context-1 {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.button-2 {
+    color: hsl(184, 100%, 22%);
+}
+
+.context-2 {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.button-3 {
+    color: hsl(179, 100%, 13%);
+}
+
+.button-1:hover,
+.button-2:hover,
+.button-3:hover {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+@media (max-width: 768px) {
+    .parent-div {
+        flex-direction: column;
+    }
+    section {
+        display: flex;
+        justify-content: center;
+    }
+    body {
+        background-color: #fff;
+    }
+    .context {
+        width: 263px;
+        margin: 12px 0;
+        height: fit-content;
+    }
+}
